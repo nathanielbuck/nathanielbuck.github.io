@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>BUCK IS 28</title>
+
+		<meta name="description" content="Buck Is">
+		<meta name="author" content="Nathaniel Buck">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			html,
+			body {
+				height: 100%;
+			}
+			.one,
+			.two {
+				background: #fff;
+				color: #000;
+				display: block;
+				height: 100%;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 84vh;
+				font-weight: bold;
+				line-height: 100vh;
+				opacity: 1;
+				position: absolute;
+				text-align: center;
+				text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px -1px 0px #fff, -1px 1px 0px #fff;
+				width: 100%;
+			}
+			.one {
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-name: backgroundOpacity;
+				z-index: 1;
+			}
+
+			.one::before,
+			.two::before {
+				bottom: 0;
+				content: '';
+				display: block;
+				left: 0;
+				mix-blend-mode: screen;
+				pointer-events: none;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.one::before {
+				background: linear-gradient(40deg, #ff3284, #f9ff89 70%);
+			}
+			.two::before {
+				background: linear-gradient(220deg, #31f7c9, #ae89ff);
+			}
+
+			@keyframes backgroundOpacity {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			<b class="one">28</b>
+			<b class="two">28</b>
+		</h1>
+	</body>
+</html>
