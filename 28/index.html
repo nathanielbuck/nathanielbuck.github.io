@@ -29,11 +29,12 @@
 				font-size: 88vw;
 				font-weight: bold;
 				line-height: 100vh;
-				opacity: 1;
+				opacity: 0.98;
 				position: absolute;
 				text-align: center;
 				text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px -1px 0px #fff, -1px 1px 0px #fff;
 				width: 100%;
+				z-index: 1;
 			}
 			@media all and (orientation:landscape) {
 				.one,
@@ -45,7 +46,7 @@
 				animation-duration: 10s;
 				animation-iteration-count: infinite;
 				animation-name: backgroundOpacity;
-				z-index: 1;
+				z-index: 2;
 			}
 
 			.one::before,
@@ -69,14 +70,30 @@
 
 			@keyframes backgroundOpacity {
 				0% {
-					opacity: 1;
+					opacity: 0.98;
 				}
 				50% {
 					opacity: 0;
 				}
 				100% {
-					opacity: 1;
+					opacity: 0.98;
 				}
+			}
+
+			ul {
+				display: block;
+				position: absolute;
+				width: 100%;
+			}
+			li {
+				display: block;
+				float: left;
+				font-family: "Helvetica Neue";
+				height: 25vh;
+				font-size: 8vw;
+				text-align: center;
+				line-height: 25vh;
+				width: 25%;
 			}
 		</style>
 	</head>
@@ -85,5 +102,35 @@
 			<b class="one">28</b>
 			<b class="two">28</b>
 		</h1>
+		<ul>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+			<li>28</li>
+		</ul>
 	</body>
 </html>
