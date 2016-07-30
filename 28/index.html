@@ -6,7 +6,7 @@
 
 		<title>BUCK IS 28</title>
 
-		<meta name="description" content="Buck Is">
+		<meta name="description" content="Buck Is 28">
 		<meta name="author" content="Nathaniel Buck">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,83 +17,264 @@
 			}
 			html,
 			body {
+				background: #fff;
 				height: 100%;
+				overflow: hidden;
+			}
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			.one {
+				background: linear-gradient(40deg, #ff3284, #f9ff89 75%);
+			}
+			.two {
+				background: linear-gradient(220deg, #31f7c9, #ae89ff);
 			}
 			.one,
 			.two {
-				background: #fff;
-				color: #000;
+				color: rgba(255, 255, 255, 0.4);
 				display: block;
 				height: 100%;
-				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 				font-size: 88vw;
 				font-weight: bold;
 				line-height: 100vh;
-				opacity: 0.98;
+				margin-top: -2vh;
 				position: absolute;
 				text-align: center;
-				text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px -1px 0px #fff, -1px 1px 0px #fff;
 				width: 100%;
 				z-index: 1;
-			}
-			@media all and (orientation:landscape) {
-				.one,
-				.two {
-					font-size: 84vh;
-				}
+
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-fill-color: transparent;
 			}
 			.one {
-				animation-duration: 10s;
+				animation-duration: 14s;
 				animation-iteration-count: infinite;
 				animation-name: backgroundOpacity;
 				z-index: 2;
 			}
 
-			.one::before,
-			.two::before {
-				bottom: 0;
-				content: '';
-				display: block;
-				left: 0;
-				mix-blend-mode: screen;
-				pointer-events: none;
-				position: absolute;
-				right: 0;
-				top: 0;
-			}
-			.one::before {
-				background: linear-gradient(40deg, #ff3284, #f9ff89 75%);
-			}
-			.two::before {
-				background: linear-gradient(220deg, #31f7c9, #ae89ff);
-			}
-
-			@keyframes backgroundOpacity {
-				0% {
-					opacity: 0.98;
-				}
-				50% {
-					opacity: 0;
-				}
-				100% {
-					opacity: 0.98;
-				}
-			}
-
+			/* Lil 28s */
 			ul {
 				display: block;
 				position: absolute;
 				width: 100%;
 			}
 			li {
+				color: #eee;
 				display: block;
 				float: left;
-				font-family: "Helvetica Neue";
 				height: 25vh;
 				font-size: 8vw;
 				text-align: center;
 				line-height: 25vh;
-				width: 25%;
+				width: 14.2857143%;
+
+				animation-iteration-count: infinite;
+			}
+			li:after {
+				content: '28';
+			}
+			li:nth-child(1) {
+				color: #a389ff;
+				animation-duration: 13s;
+				animation-name: li1;
+			}
+			li:nth-child(2) {
+				color: #2fbaed;
+				animation-duration: 16s;
+				animation-name: li3;
+			}
+			li:nth-child(3) {
+				color: #8b2cdd;
+				animation-duration: 20s;
+				animation-name: li2;
+			}
+			li:nth-child(4) {
+				color: #9cef2f;
+				animation-duration: 10s;
+				animation-name: li3;
+			}
+			li:nth-child(5) {
+				color: #32ff69;
+				animation-duration: 9s;
+				animation-name: li2;
+			}
+			li:nth-child(6) {
+				color: #aa2288;
+				animation-duration: 16.3s;
+				animation-name: li3;
+			}
+			li:nth-child(7) {
+				color: #cfe82e;
+				animation-duration: 6s;
+				animation-name: li2;
+			}
+			li:nth-child(8) {
+				color: #e8b32e;
+				animation-duration: 15s;
+				animation-name: li1;
+			}
+			li:nth-child(9) {
+				color: #275bc4;
+				animation-duration: 7s;
+				animation-name: li3;
+			}
+			li:nth-child(10) {
+				color: #93ef2f;
+				animation-duration: 13s;
+				animation-name: li3;
+			}
+			li:nth-child(11) {
+				color: #ce2934;
+				animation-duration: 20s;
+				animation-name: li2;
+			}
+			li:nth-child(12) {
+				color: #329fff;
+				animation-duration: 6.8s;
+				animation-name: li1;
+			}
+			li:nth-child(13) {
+				color: #e2ac2d;
+				animation-duration: 12.2s;
+				animation-name: li3;
+			}
+			li:nth-child(14) {
+				color: #27c475;
+				animation-duration: 21s;
+				animation-name: li3;
+			}
+			li:nth-child(15) {
+				color: #3053f2;
+				animation-duration: 7.7s;
+				animation-name: li2;
+			}
+			li:nth-child(16) {
+				color: #3053f2;
+				animation-duration: 5.9s;
+				animation-name: li1;
+			}
+			li:nth-child(17) {
+				color: #fff132;
+				animation-duration: 6.6s;
+				animation-name: li2;
+			}
+			li:nth-child(18) {
+				color: #cf32ff;
+				animation-duration: 16.4s;
+				animation-name: li3;
+			}
+			li:nth-child(19) {
+				color: #2bd5db;
+				animation-duration: 7.3s;
+				animation-name: li2;
+			}
+			li:nth-child(20) {
+				color: #f230ef;
+				animation-duration: 11.1s;
+				animation-name: li1;
+			}
+			li:nth-child(21) {
+				color: #94ce29;
+				animation-duration: 19.5s;
+				animation-name: li3;
+			}
+			li:nth-child(22) {
+				color: #24a8b5;
+				animation-duration: 9.7s;
+				animation-name: li1;
+			}
+			li:nth-child(23) {
+				color: #db2b69;
+				animation-duration: 8.1s;
+				animation-name: li2;
+			}
+			li:nth-child(24) {
+				color: #6b1f9e;
+				animation-duration: 17.7s;
+				animation-name: li3;
+			}
+			li:nth-child(25) {
+				color: #30f236;
+				animation-duration: 8.3s;
+				animation-name: li2;
+			}
+			li:nth-child(26) {
+				color: #d3e22d;
+				animation-duration: 4.8s;
+				animation-name: li1;
+			}
+			li:nth-child(27) {
+				color: #30c7f4;
+				animation-duration: 3.2s;
+				animation-name: li2;
+			}
+			li:nth-child(28) {
+				color: #89fff5;
+				animation-duration: 5.67s;
+				animation-name: li1;
+			}
+
+			@keyframes backgroundOpacity {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes li1 {
+				0% {
+					opacity: 0.3;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 0.3;
+				}
+			}
+			@keyframes li2 {
+				0% {
+					opacity: 0;
+				}
+				50% {
+					opacity: 0.4;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes li3 {
+				0% {
+					opacity: 0.25;
+				}
+				25% {
+					opacity: 0;
+				}
+				50% {
+					opacity: 0.25;
+				}
+				75% {
+					opacity: 0.5;
+				}
+				100% {
+					opacity: 0;
+					opacity: 0.25;
+				}
+			}
+
+			@media all and (orientation:landscape) {
+				.one,
+				.two {
+					font-size: 84vh;
+				}
 			}
 		</style>
 	</head>
@@ -102,35 +283,38 @@
 			<b class="one">28</b>
 			<b class="two">28</b>
 		</h1>
+
 		<ul>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
-			<li>28</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
 	</body>
 </html>
+
+<!-- SDG x 28 -->
